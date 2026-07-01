@@ -37,3 +37,5 @@ TALPAD的/proc/version记录的编译环境是llvm-r383902
 我已经把需要的东西放在prebuilts里面了 amd64开箱即用
 
 什么？为什么不支持arm64？不知道不知道 自己去编译llvm啊
+
+直接执行build-mt8797.sh即可开始编译
