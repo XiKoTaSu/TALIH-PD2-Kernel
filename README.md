@@ -6,11 +6,11 @@
 
 但是TAL（就是那个TAL）似乎给这内核动了点手脚，大概内容为：
 
-1. 有些.c指向的头文件地址稀烂，本应写<目标头文件>却写成了"目标头文件"
+1. ~~有些.c指向的头文件地址稀烂，本应写<目标头文件>却写成了"目标头文件"~~（已解决）
 
 2. 有些内容似乎是闭源的，随便TAL了，反正也是他们自己写的东西，该开源的还是开源了
 
-3. 连kconfig都有些错误，刚开始编译时简直是开幕雷击
+3. ~~连kconfig都有些错误，刚开始编译时简直是开幕雷击~~（已解决）
 
 我们打算在n个月内给该内核适配sukisu/kernelsu
 
@@ -42,10 +42,12 @@ TALPAD的/proc/version记录的编译环境是llvm-r383902
 
 1.执行Integrate_sukisu.sh
 
-2.执行Integrate_SUSFS.sh
+2.~~执行Integrate_SUSFS.sh~~（没兼容）
 
 3.执行download_clang.sh
 
 4.最后执行build-mt8797.sh
 
 注意：这些脚本目前还处于开发阶段 原开发者执行都没执行过 就是个毛坯 你要lkm集成还是builtin都可以
+
+如果你需要sukisu/ksu，请自行修改defconfig
